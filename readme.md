@@ -1,7 +1,9 @@
 # TelegramAppender - for [log4js-node](https://github.com/log4js-node/log4js-node)
 
 Install peer dependency log4js:
-`npm install log4js`
+```
+npm install log4js
+```
 
 Installation:
 ```
@@ -9,7 +11,8 @@ npm install git+ssh://git@github.com:liangwp/log4js-node-telegramAppender.git
 ```
 OR
 ```
-npm install git+https://git@github.com:liangwp/log4js-node-telegramAppender.git```
+npm install git+https://git@github.com:liangwp/log4js-node-telegramAppender.git
+```
 
 Sample usage:
 ```
