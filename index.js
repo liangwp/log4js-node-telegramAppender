@@ -31,13 +31,13 @@ function stdoutAppender(layout, levels, config) {
                     if (error) {
                         console.log("Error sending to telegram:");
                         console.log(error);
-                    } else {
+                    } /* else {
                         console.log("Message sent to telegram:");
                         console.log(body);
-                    }
+                    }*/
                 });
             } else {
-                console.log(`===== log telegram quietly`);
+                //console.log(`===== log telegram quietly`);
                 Object.assign(params.qs, {
                     text: layout(loggingEvent),
                     disable_notification: true
@@ -46,23 +46,25 @@ function stdoutAppender(layout, levels, config) {
                     if (error) {
                         console.log("Error sending to telegram:");
                         console.log(error);
-                    } else {
+                    } /* else {
                         console.log("Message sent to telegram:");
                         console.log(body);
-                    }
+                    } */
                 });
             }
-        } else {
+        } /* else {
             console.log(`===== silentAlertLevel is greater than or equal to loggingEvent level.\n===== don't log telegram`);
-        }
+        } */
 
         //process.stdout.write(`test: ${layout(loggingEvent)}\n`);
     };
 
     // add a shutdown function.
+    /*
     appender.shutdown = (done) => {
         process.stdout.write('appender shutdown', done);
     };
+    */
 
     return appender;
 }
