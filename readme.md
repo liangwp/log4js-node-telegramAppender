@@ -7,11 +7,7 @@ npm install log4js
 
 Installation:
 ```
-npm install git+ssh://git@github.com:liangwp/log4js-node-telegramAppender.git
-```
-OR
-```
-npm install git+https://git@github.com:liangwp/log4js-node-telegramAppender.git
+npm install --save "https://git@github.com:liangwp/log4js-node-telegramAppender/tarball.master"
 ```
 
 Sample usage:
@@ -23,7 +19,7 @@ log4js.configure({
     appenders: {
         colouredConsole: { type: 'stdout' },
         telegramAlert: {
-            type: '../telegramAppender', // ./telegramAppender
+            type: 'log4js-node-telegramAppender',
             silentAlertLevel: 'info',
             audioAlertLevel: 'error',
             bottoken: <token>,
