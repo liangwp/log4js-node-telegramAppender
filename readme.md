@@ -2,7 +2,7 @@
 
 Install peer dependency log4js:
 ```
-npm install log4js
+npm install --save log4js
 ```
 
 Installation:
