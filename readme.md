@@ -5,9 +5,9 @@ Install peer dependency log4js:
 npm install --save log4js
 ```
 
-Installation:
+Install log4js-node-telegramAppender, title is rather long, but I guess that's fine...:
 ```
-npm install --save "https://git@github.com:liangwp/log4js-node-telegramAppender/tarball.master"
+npm install --save "https://git@github.com:liangwp/log4js-node-telegramAppender/tarball/master"
 ```
 
 Sample usage:
