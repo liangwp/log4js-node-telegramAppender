@@ -1,11 +1,19 @@
 # TelegramAppender - for [log4js-node](https://github.com/log4js-node/log4js-node)
 
+Pre-requisites:
+* registered a telegram bot
+* telegram bot token
+* put the bot in a chat group
+* chat id of the group
+* reference: [Telegram Bot API](https://core.telegram.org/bots/api)
+
+
 Install peer dependency log4js:
 ```
 npm install --save log4js
 ```
 
-Install log4js-node-telegramAppender, title is rather long, but I guess that's fine...:
+Install log4js-node-telegramAppender:
 ```
 npm install --save "https://git@github.com:liangwp/log4js-node-telegramAppender/tarball/master"
 ```
