@@ -15,7 +15,7 @@ npm install --save log4js
 
 Install log4js-node-telegramAppender:
 ```
-npm install --save "https://git@github.com:liangwp/log4js-node-telegramAppender/tarball/master"
+npm install --save "https://github.com/liangwp/log4js-node-telegramAppender/tarball/master"
 ```
 
 Sample usage:
