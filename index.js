@@ -72,15 +72,17 @@ function stdoutAppender(layout, levels, config) {
 function configure(config, layouts, findAppender, levels) {
 
     // the default custom layout for this appender, not using the layouts module
-    var layout = function(loggingEvent) {
+    var default_layout = function(loggingEvent) {
         var header = `<b>${loggingEvent.categoryName}: ${loggingEvent.level}</b>\n`;
         var timestamp = `[${loggingEvent.startTime.toISOString()}]\n`;
         var body = loggingEvent.data.map(d => { return d.toString(); }).join("\n");
         return header+timestamp+body;
     }
 
+    var use_layout = config.layout || default_layout;
+    
     //create a new appender instance
-    return stdoutAppender(layout, levels, config);
+    return stdoutAppender(use_layout, levels, config);
 }
 
 //export the only function needed
