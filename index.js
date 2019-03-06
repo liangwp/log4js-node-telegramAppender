@@ -79,8 +79,8 @@ function configure(config, layouts, findAppender, levels) {
         return header+timestamp+body;
     }
 
-    var use_layout = config.layout || default_layout;
-    
+    var use_layout = config.layout ? layouts.layout(config.layout.type, config.layout) : default_layout;
+
     //create a new appender instance
     return stdoutAppender(use_layout, levels, config);
 }
